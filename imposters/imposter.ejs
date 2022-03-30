@@ -1,0 +1,40 @@
+{
+  "port": 42000,
+  "protocol": "http",
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "equals": {
+            "path": "/api/centros/",
+            "method": "GET"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+	    "statusCode": 200,
+	    "headers": {
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+            },
+	    "body": {
+              "centros" : [{
+                "id" : "d30cd5da-8424-4922-a7ff-4ecb670a6c0a",
+                "nombre":  "centro principal"
+                    },
+        
+              {
+                "id" : "d30cd5da-8424-4922-a7ff-4ecb670a6c6h",
+                "nombre":  "centro segundo"
+                    }]
+
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
