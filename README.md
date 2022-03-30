@@ -1,7 +1,7 @@
 # Mountebank Imposter Service
 
 * Dockerized mountebank service with impostor example.
-* Mountebank version: 2.2.0.
+* Mountebank version: 2.6.0.
 * NodeJS: 12.1.6 LTS.
 
 ## Prequisites
